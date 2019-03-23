@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--BootStrap 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Contact Us</title>
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:400,700,700i" rel="stylesheet">
+    </head>
+    <body style="font-family: 'Roboto Condensed'">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="img/dp.jpg" style="width: 40px">
+                TeenTalks
+            </a>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item active"> 
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+            </div>
+        </nav>
+
+        <div class="jumbotron" style="margin-bottom:  0px;  background-color:  white">
+            <h1><b>Contact Us</b></h1>
+        </div>
+        
+        <div class="container">
+            <h3><i>Fill out the form to proceed:</i> </h3>
+            <form>
+                <label>Name: </label><br>
+                <input type="text" id="inp_name"><br>
+                <label>Email:</label><br>
+                <input type="email" id="inp_email"><br>
+                <label>Name of school/college:</label><br>
+                <input type="text" id="inp_loc"><br>
+                <label>What can we help you with?</label><br>
+                <textarea rows="5" cols="20" id="inp_prob"></textarea><br>
+                <button type="button" class="btn btn-outline-success" onclick="submitContactForm()">Submit</button>
+            </form>
+        </div>
+
+        <br>
+        <br> 
+<!--
+        <div class="container">
+                <h3><i>You can also contact us via: </i> </h3>
+                Email: <br>
+                Phone: <br>
+
+                Or DM us on instagram<br>
+            </div>
+        -->
+        <div class="jumbotron text-center" style="margin-bottom: 0px; margin-top: 15px">
+            <h6><b>Visit us on:</b></h6><br>
+            <div class="row">
+                <div class="col">
+                    <a href="#"><img src="img/facebook.png" style="width: 32px;"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/teentalks17/"><img src="img/instagram.png" style="width: 32px;"></a>
+                </div>
+                <div class="col">
+                    <a href="#"><img src="img/wordpress-logo-of-a-letter-in-a-circle.png" style="width: 32px;"></a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/teentalks/teentalks.github.io"><img src="img/github.png" style="width: 32px;"></a>
+                </div>
+            </div>
+            <br>
+            <p style="color: grey"><i>Built by Kunal Bhat, 2019</i></p>
+        </div>
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/contact.js"></script>
+
+    </body>
+</html>
